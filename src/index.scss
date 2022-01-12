@@ -9,3 +9,90 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+$greyC: rgb(59, 58, 58);
+
+.event-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 10px;
+  width: 200px;
+  height: 300px;
+  color: $greyC;
+  text-decoration-line: none;
+  font-size: 20px;
+  background-color: rgb(80, 170, 185);
+  border: 2px solid $greyC;
+  border-radius: 5px;
+}
+.events-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@mixin general-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.event-table {
+  padding: 5px;
+  margin: 10px auto;
+  @include general-flex;
+  width: 50%;
+  height: auto;
+  color: $greyC;
+  font-size: 20px;
+  background-color: rgb(80, 170, 185);
+  border: 2px solid $greyC;
+}
+
+.table-header {
+  @include general-flex;
+  flex-direction: row;
+  .member-name {
+    margin: 0 10px;
+  }
+}
+table {
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid black;
+}
+.event-creation {
+  margin: 20px auto;
+  width: 70%;
+}
+.event-creation-form {
+  position: relative;
+  padding: 10px 5px;
+}
+.member {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+.add-member {
+  position: absolute;
+  top: 95%;
+  left: 20%;
+}
+.start-event {
+  position: absolute;
+  top: 100%;
+  left: 70%;
+  width: 20%;
+  height: 30px;
+  padding-top: 7px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  background-color: rgb(155, 62, 108);
+  border: 2px solid rgb(94, 34, 64);
+  text-decoration: none;
+}
