@@ -46,7 +46,7 @@ $greyC: rgb(59, 58, 58);
   height: auto;
   color: $greyC;
   font-size: 20px;
-  background-color: rgb(80, 170, 185);
+  background-color: rgb(149, 95, 151);
   border: 2px solid $greyC;
 }
 
@@ -73,10 +73,7 @@ th {
   padding: 10px 5px;
 }
 .member {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 10px auto;
+  margin-bottom: 5px;
 }
 .add-member {
   position: absolute;
@@ -84,15 +81,12 @@ th {
   left: 20%;
 }
 .start-event {
-  position: absolute;
-  top: 100%;
-  left: 70%;
-  width: 20%;
-  height: 30px;
-  padding-top: 7px;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  background-color: rgb(155, 62, 108);
-  border: 2px solid rgb(94, 34, 64);
   text-decoration: none;
+}
+.members {
+  margin-bottom: 20px;
+}
+.add-members-form {
+  @include general-flex;
+  flex-direction: row;
 }
